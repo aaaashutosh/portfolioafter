@@ -176,7 +176,7 @@ async function fetchRSS() {
             html += `
                 <div class="rss-item">
                     <div class="rss-image">
-                        <img src="${item.thumbnail || 'https://via.placeholder.com/300'}" alt="${item.title}">
+                        <img src="${item.thumbnail || 'altimg.jpg'}" alt="${item.thumbnail ? item.title : 'altimg.jpg'}">
                     </div>
                     <div class="rss-content">
                         <h3>${item.title}</h3>
